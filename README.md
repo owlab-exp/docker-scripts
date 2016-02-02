@@ -13,6 +13,7 @@
 
     coreos-install -d /dev/sda -c cloud-config.yaml
 
+단, 이 PXE 서버는 특정 네트워크상에 하나만 있으면 된다.
 자세한 사항은 [Installing CoreOS to Disk](https://coreos.com/os/docs/latest/installing-to-disk.html)를 참조한다.
 
 ## obzen-registry-start/stop.sh
