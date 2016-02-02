@@ -11,7 +11,7 @@ PXE Boot Server를 운영할 머신에서:
     ce /data/docker-volumes/pxe-image
     wget http://alpha.release.core-os.net/amd64-usr/current/coreos_production_pxe.vmlinuz
     wget http://alpha.release.core-os.net/amd64-usr/current/coreos_production_pxe_image.cpio.gz
-    cd \<pixiecore-start.sh 가 있는 디렉토리\>
+    cd <pixiecore-start.sh 가 있는 디렉토리>
     ./pixiecore-start.sh
 
 CoreOS를 설치할 머신에서:
