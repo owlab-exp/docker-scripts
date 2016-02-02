@@ -2,14 +2,14 @@
 이 repository는 여타의 프로젝트들의 기반이 되는 소프트웨어 패키지들을 docker로 실행하기 위한 스크립트들을 모아놓은 것이다.
 
 ## pixiecore-start/stop.sh
-PXE 부트서버를 실행하고 중지하는 스크립트이다.<br>
+여러대의 머신들에 CoreOS를 설치해야 하는 경우에, USB Stick이나 CD-Rom을 사용하지 않고 네트워크 부팅을 할 수 있도록 하는 PX(I)E 서버이다.
 머신에 CoreOS를 설치해야 하는 경우에, 
 - 다른 (리눅스) 시스템에서 **pixiecore-start.sh**를 실행한 후
-- 머신을 네트워크에 연결하고,
+- CoreOS를 설치할 머신을 네트워크에 연결하고,
 - 머신의 BIOS에서 PXE 부트를 하도록 설정한 후
 - 머신을 시작하면, CoreOS로 부팅이 된다.
 이렇게 부팅을 한 후에 cloud-config.yaml를 작성하여 (혹은, 다른 시스템에 올려놓은 것을 sftp등으로 내려받아)<br>
-아래의 명력으로 디스크에 CoreOS를 설치한다.
+아래의 명령으로 디스크에 CoreOS를 설치한다.
 
     coreos-install -d /dev/sda -c cloud-config.yaml
 
