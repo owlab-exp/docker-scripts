@@ -34,3 +34,8 @@ Public Docker Hub를 이용하지 않고 별도의 Docker Registry Server를 운
 ## gitlab-ce-start/stop.sh
 [GitHub](http://www.github.com)을 이용하지 않고, 별도의 내부 Git Repository Server를 운영하기 위해 필요한 소프트웨어 패키지를 docker로 만든 것이다.
 자세한 사항은 [GitLab](https://about.gitlab.com/)을 참고한다.
+
+## sonatype-nexus-start/stop.sh
+URL: http://192.168.10.81:8081
+Admin login: admin / admin123
+Please refer to sonatype/nexus in docker hub, url: [https://hub.docker.com/r/sonatype/nexus/](https://hub.docker.com/r/sonatype/nexus/)
